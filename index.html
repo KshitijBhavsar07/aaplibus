@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>aapli bus </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to aapli bus</h1>
+        <nav>
+            <ul>
+                <li><a href="#searchSection">Search Buses</a></li>
+                <li><a href="#paymentSection">Payment</a></li>
+                <li><a href="#discounts">Discounts</a></li>
+                <li><a href="#accessibility">Accessibility</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="searchSection" class="search-section">
+        <h2>Find Your Bus</h2>
+        <label for="from">From:</label>
+        <input type="text" id="from" placeholder="Enter your starting point">
+        
+        <label for="to">To:</label>
+        <input type="text" id="to" placeholder="Enter your destination">
+        
+        <label for="date">Date of Journey:</label>
+        <input type="date" id="date">
+        
+        <button id="searchButton">Search</button>
+    </section>
+    
+
+    <!-- Payment Section with Additional Options -->
+    <section class="payment-section" id="paymentSection">
+        <h3>Payment Details</h3>
+        <p>Total Fare: <span id="totalFare">500rs</span></p>
+        <button id="payButton">Proceed to Payment</button>
+
+        <!-- New Features for Ladies, Children, Elderly -->
+        <div class="additional-features">
+            <h4>Special Services</h4>
+            <label>
+                <input type="checkbox" id="womenOnlyBus"> Women-Only Bus
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" id="elderlyAssistance"> Elderly Assistance (Wheelchair, Boarding Help)
+            </label>
+            <br>
+            <label>
+                <input type="number" id="childAge" min="0" max="12" placeholder="Child's Age for Discount">
+            </label>
+            <button id="calculateFare">Apply Discounts</button>
+            <p id="discountMessage"></p>
+        </div>
+    </section>
+
+    <!-- Discounts and Offers Section -->
+    <section id="discounts">
+        <h2>Exclusive Discounts</h2>
+        <p>Child Discount: 50% off for children (age 0-12).</p>
+        <p>Senior Citizen Discount: 30% off for passengers aged 60 and above.</p>
+    </section>
+
+    <!-- Accessibility Section -->
+    <section id="accessibility">
+        <h2>Accessibility Features</h2>
+        <p>We provide accessible services for passengers with disabilities, including wheelchair access and priority boarding.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: aaplibus@gmail.com.</p>
+        <p>Phone: +1 234 567 8900</p>
+    </section>
+
+    <footer>
+        <p>© 2024  aapli bus. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
